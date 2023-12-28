@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         NamuNews Silent
 // @namespace    kafka2412
-// @version      0.0.2
+// @version      0.0.3
 // @description  Remove comment section in NamuNews
 // @author       kafka2412
 // @supportURL   https://github.com/kafka2412/NamuNews-Slient/discussions
@@ -14,17 +14,16 @@
 
 (function() {
     'use strict';
-    // var removed = false;
-
+    
     let timer = setInterval(function(){ 
-        const collection = document.getElementsByClassName("sc-1gjql7g-0");
-        // console.log(collection, removed);
+        const collection = document.getElementsByClassName("am7kwa-1");
+        // console.log(collection);
         if (collection.length > 0) {
-            collection[0].remove();    
-            // removed = true;
-            clearInterval(timer);
+            const parent = document.getElementsByClassName("am7kwa-0");
+            parent[0].remove();
+            // clearInterval(timer);
         }
-        // console.log(collection, removed);
-    },500); //500ms
+        // console.log(collection);
+    },2000); //1000ms
 
 })();
