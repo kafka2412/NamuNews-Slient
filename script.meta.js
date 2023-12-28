@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         NamuNews Silent
 // @namespace    kafka2412
-// @version      0.0.1
+// @version      0.0.2
 // @description  Remove comment section in NamuNews
 // @author       kafka2412
 // @supportURL   https://github.com/kafka2412/NamuNews-Slient/discussions
